@@ -1,5 +1,6 @@
 package com.example.joaonormando.controlefinanceiro;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -46,7 +47,8 @@ public class login extends AppCompatActivity {
             Toast.makeText(this, "Preencha os dois campos", Toast.LENGTH_SHORT).show();
         }
         else if(username.equals("joao") && senha.equals("1234")){
-            Toast.makeText(this, "Logado com sucesso!", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(login.this,Main.class);
+            startActivity(i);
         }
         else{
             Toast.makeText(this, "Usuário ou senha errados", Toast.LENGTH_SHORT).show();

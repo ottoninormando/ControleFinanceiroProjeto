@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sistema Financeiro"
+            android:text="Gestão Pessoal de Finanças"
             android:textSize="60px"
             android:textColor="@color/colorAccent" />
     </LinearLayout>
@@ -24,33 +24,42 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_categoria"
+            android:id="@+id/btn_lancar_gastos"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_margin="5dp"
-            android:text="Categoria"
-            android:textColor="#fff" />
+            android:text="Lançar Gasto"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"/>
+
 
         <Button
-            android:id="@+id/btn_sair"
+            android:id="@+id/btn_visualizar_gastos"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_margin="5dp"
-            android:text="Produto"
-            android:textColor="#fff" />
+            android:text="Visualizar gastos"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_sair"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
+            android:id="@+id/btn_configuracoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Ordem"
+            android:text="Configurações"
             android:textColor="#fff" />
-
-
     </LinearLayout>
 
 </LinearLayout>

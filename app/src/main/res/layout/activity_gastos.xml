@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".login">
+    tools:context=".Gastos">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gestão Pessoal de Finanças"
+            android:text="Adicionar Gastos"
             android:textSize="60px"
             android:textColor="@color/colorAccent" />
     </LinearLayout>
@@ -28,11 +28,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario"/>
+            android:text="Nome"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText_usuario"
+            android:id="@+id/editText_nomeGasto"
             android:layout_weight="1"
             android:ems="10"
             android:textAlignment="center" />
@@ -45,16 +45,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha"/>
+            android:text="Valor"/>
 
         <EditText
-            android:id="@+id/editText_senha"
+            android:id="@+id/editText_valorGasto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPassword"
             android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcelas"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qntd_parcelas">
+        </Spinner>
+
     </LinearLayout>
 
     <LinearLayout
@@ -65,14 +81,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:id="@+id/btn_login"
+            android:text="Adicionar"
+            android:id="@+id/btn_adicionar"
             android:textColor="#fff"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cadastrar"
-            android:id="@+id/btn_sair"
+            android:text="Cancelar"
+            android:id="@+id/btn_cancelar"
             android:textColor="#fff"/>
 
     </LinearLayout>
